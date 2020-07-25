@@ -14,40 +14,26 @@ parser.add_argument("-c", "--collection", help="Collection Name")
 parser.add_argument("-f", "--field", help="Field Name")
 parser.add_argument("-v", "--value", help="Field Value")
 
-# parse the arguments
+# parsing the arguments
 args = parser.parse_args()
 
-# adding field to firestore collection logic
+key_path: str = args.key
+collection: str = args.collection
+field_name: str = args.field
+field_value: any = args.value
 
-try:
-    key_path = os.path.normpath(args.key)
-except ValueError:
-    print("enter valid key path")
-
-try:
-    collection: str = args.collection
-except ValueError:
-    print("enter valid collection name")
-
-try:
-    field_name: str = args.field
-except ValueError:
-    print("enter valid field name")
-
-try:
-    field_value = args.value
-except ValueError:
-    print("enter valid key path")
-
-# Use a service account
-cred = credentials.Certificate(key_path)
+# checking the credentials
+cred = credentials.Certificate(os.path.normpath(key_path))
 firebase_admin.initialize_app(cred)
 
+# initializing the database
 db = firestore.client()
 
+# getting the collection ref
 collection_ref = db.collection(collection)
 docs = collection_ref.stream()
 
+# adding the field to all the docs iteratively
 for doc in docs:
     print(f'{doc.id} => {doc.to_dict()}')
     collection_ref.document(doc.id).update(
