@@ -10,6 +10,9 @@
 ![GitHub forks](https://img.shields.io/github/forks/shubham-chhimpa/fire-script-cli?style=social)
 ![GitHub watchers](https://img.shields.io/github/watchers/shubham-chhimpa/fire-script-cli?style=social)
 ![Twitter Follow](https://img.shields.io/twitter/follow/shubham_chhimpa?label=Follow&style=social)
+
+![](project/images/cli.png)
+
 </h2>
 
 # Table of Contents
