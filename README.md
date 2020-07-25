@@ -21,9 +21,18 @@
 - [License](#license)
 
 # Description
-CLI to update all documents with new field in a collection of Firebase
-Firestore Database
+CLI to update all documents with a new field in a collection of Firebase
+[Firestore](https://firebase.google.com/docs/firestore/quickstart) Database
 
+You need the service key json file which you can get bt following these [steps](https://firebase.google.com/docs/firestore/quickstart#initialize)
+
+# Requirements
+
+1. You should have python 3
+2. Install the requirements
+```
+pip install -r requirements.txt
+```
 
 # Usage
 ```
