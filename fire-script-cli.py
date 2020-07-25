@@ -5,7 +5,7 @@ import argparse
 import os
 
 # initialize the parser
-parser = argparse.ArgumentParser(description="Script to update all documents with new field in a collection of "
+parser = argparse.ArgumentParser(description="CLI to update all documents with new field in a collection of "
                                              "Firebase Firestore Database ")
 
 # add arguments
