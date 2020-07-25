@@ -27,7 +27,7 @@
 CLI to update all documents with a new field in a collection of Firebase
 [Firestore](https://firebase.google.com/docs/firestore/quickstart) Database
 
-You need the service key json file which you can get bt following these [steps](https://firebase.google.com/docs/firestore/quickstart#initialize)
+You need the service key json file which you can get by following these [steps](https://firebase.google.com/docs/firestore/quickstart#initialize)
 
 # Requirements
 
