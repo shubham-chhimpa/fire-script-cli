@@ -32,6 +32,7 @@ You need the service key json file which you can get bt following these [steps](
 # Requirements
 
 1. You should have python 3
+2. Create a virtual environment
 2. Install the requirements
 ```
 pip install -r requirements.txt
